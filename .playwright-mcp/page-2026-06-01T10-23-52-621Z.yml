@@ -1,0 +1,115 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Attributes" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/attributes
+        - img [ref=e25]
+        - text: Attributes
+      - link "Inventory" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e28]
+        - text: Inventory
+      - paragraph [ref=e31]: Sales
+      - link "Customers" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e33]
+        - text: Customers
+      - link "Analytics" [ref=e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e36]
+        - text: Analytics
+      - paragraph [ref=e39]: System
+      - link "Settings" [ref=e40] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e41]
+        - text: Settings
+      - link "Activity Log" [ref=e44] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e45]
+        - text: Activity Log
+    - generic [ref=e48]:
+      - generic [ref=e50]: A
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Administrator
+        - paragraph [ref=e53]: Admin
+        - button "Sign out" [ref=e55] [cursor=pointer]
+  - generic [ref=e56]:
+    - navigation [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - link [ref=e62] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e63]
+          - link "Dashboard" [ref=e66] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Administrator
+          - img [ref=e73]
+    - banner [ref=e75]:
+      - generic [ref=e77]:
+        - heading "Attributes" [level=2] [ref=e79]
+        - link "Add Attribute" [ref=e81] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/attributes/create
+          - img [ref=e82]
+          - text: Add Attribute
+    - main [ref=e84]:
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - text: Define reusable options like
+          - strong [ref=e88]: Color
+          - text: or
+          - strong [ref=e89]: Size
+          - text: . Pick their values on a product to auto-generate variants.
+        - table [ref=e91]:
+          - rowgroup [ref=e92]:
+            - row "Attribute Values Actions" [ref=e93]:
+              - columnheader "Attribute" [ref=e94]
+              - columnheader "Values" [ref=e95]
+              - columnheader "Actions" [ref=e96]
+          - rowgroup [ref=e97]:
+            - row "Color Red Blue Green Black Edit Delete" [ref=e98]:
+              - cell "Color" [ref=e99]
+              - cell "Red Blue Green Black" [ref=e100]:
+                - generic [ref=e101]:
+                  - generic [ref=e102]: Red
+                  - generic [ref=e103]: Blue
+                  - generic [ref=e104]: Green
+                  - generic [ref=e105]: Black
+              - cell "Edit Delete" [ref=e106]:
+                - link "Edit" [ref=e107] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/attributes/1/edit
+                - button "Delete" [ref=e109] [cursor=pointer]
+            - row "Size S M L XL Edit Delete" [ref=e110]:
+              - cell "Size" [ref=e111]
+              - cell "S M L XL" [ref=e112]:
+                - generic [ref=e113]:
+                  - generic [ref=e114]: S
+                  - generic [ref=e115]: M
+                  - generic [ref=e116]: L
+                  - generic [ref=e117]: XL
+              - cell "Edit Delete" [ref=e118]:
+                - link "Edit" [ref=e119] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/attributes/2/edit
+                - button "Delete" [ref=e121] [cursor=pointer]

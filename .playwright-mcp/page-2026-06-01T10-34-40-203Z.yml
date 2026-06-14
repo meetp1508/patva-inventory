@@ -1,0 +1,143 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Attributes" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/attributes
+        - img [ref=e25]
+        - text: Attributes
+      - link "Inventory" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e28]
+        - text: Inventory
+      - paragraph [ref=e31]: Sales
+      - link "Customers" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e33]
+        - text: Customers
+      - link "Analytics" [ref=e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e36]
+        - text: Analytics
+      - paragraph [ref=e39]: System
+      - link "Settings" [ref=e40] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e41]
+        - text: Settings
+      - link "Activity Log" [ref=e44] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e45]
+        - text: Activity Log
+    - generic [ref=e48]:
+      - generic [ref=e50]: A
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Administrator
+        - paragraph [ref=e53]: Admin
+        - button "Sign out" [ref=e55] [cursor=pointer]
+  - generic [ref=e56]:
+    - navigation [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - link [ref=e62] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e63]
+          - link "Dashboard" [ref=e66] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Administrator
+          - img [ref=e73]
+    - banner [ref=e75]:
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - link [ref=e79] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products
+            - img [ref=e80]
+          - heading "Classic Shirt" [level=2] [ref=e82]
+        - generic [ref=e84]:
+          - link "Print Barcode" [ref=e85] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/43/barcode
+          - link "Edit" [ref=e86] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/43/edit
+    - main [ref=e87]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - heading "Details" [level=3] [ref=e92]
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - term [ref=e95]: SKU
+                - definition [ref=e96]: SHIRT-CLASSIC
+              - generic [ref=e97]:
+                - term [ref=e98]: Barcode
+                - definition [ref=e99]: "030994858123"
+              - generic [ref=e100]:
+                - term [ref=e101]: Category
+                - definition [ref=e102]: Uncategorized
+              - generic [ref=e103]:
+                - term [ref=e104]: Type
+                - definition [ref=e105]: variant
+              - generic [ref=e106]:
+                - term [ref=e107]: Purchase Price
+                - definition [ref=e108]: ₹300.00
+              - generic [ref=e109]:
+                - term [ref=e110]: Selling Price
+                - definition [ref=e111]: ₹500.00
+              - generic [ref=e112]:
+                - term [ref=e113]: Tax Rate
+                - definition [ref=e114]: 0.00%
+              - generic [ref=e115]:
+                - term [ref=e116]: Stock
+                - definition [ref=e117]: 40 (threshold 10)
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - heading "Variants" [level=3] [ref=e120]
+              - link "Edit variants" [ref=e121] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/products/43/edit
+            - table [ref=e123]:
+              - rowgroup [ref=e124]:
+                - row "Variant SKU Barcode Price Stock" [ref=e125]:
+                  - columnheader "Variant" [ref=e126]
+                  - columnheader "SKU" [ref=e127]
+                  - columnheader "Barcode" [ref=e128]
+                  - columnheader "Price" [ref=e129]
+                  - columnheader "Stock" [ref=e130]
+              - rowgroup [ref=e131]:
+                - row "Green / L SHIRT-CLASSIC-GREEN-L 030994857634 ₹500.00 10" [ref=e132]:
+                  - cell "Green / L" [ref=e133]
+                  - cell "SHIRT-CLASSIC-GREEN-L" [ref=e134]
+                  - cell "030994857634" [ref=e135]
+                  - cell "₹500.00" [ref=e136]
+                  - cell "10" [ref=e137]
+                - row "Black / L SHIRT-CLASSIC-BLACK-L 030994823779 ₹500.00 30" [ref=e138]:
+                  - cell "Black / L" [ref=e139]
+                  - cell "SHIRT-CLASSIC-BLACK-L" [ref=e140]
+                  - cell "030994823779" [ref=e141]
+                  - cell "₹500.00" [ref=e142]
+                  - cell "30" [ref=e143]
+        - generic [ref=e145]:
+          - paragraph [ref=e146]: Barcode
+          - img "030994858123" [ref=e147]
+          - paragraph [ref=e148]: "030994858123"
+          - link "Download PNG" [ref=e149] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/43/barcode/download

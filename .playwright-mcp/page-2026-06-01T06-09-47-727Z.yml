@@ -1,0 +1,136 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - generic [ref=e75]:
+        - link [ref=e76] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products
+          - img [ref=e77]
+        - heading "Add New Product" [level=2] [ref=e79]
+    - main [ref=e80]:
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - heading "Basic Information" [level=3] [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]: Product Name *
+            - textbox [active] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: Category
+            - combobox [ref=e92]:
+              - option "Uncategorized" [selected]
+              - option "Apparel"
+              - option "Beverages"
+              - option "Dairy"
+              - option "Electronics"
+              - option "Groceries"
+              - option "Personal Care"
+              - option "Snacks"
+              - option "Stationery"
+          - generic [ref=e93]:
+            - generic [ref=e94]: Description
+            - textbox [ref=e95]
+          - generic [ref=e96]:
+            - generic [ref=e97]: Image
+            - button "Choose File" [ref=e98]
+          - heading "Inventory & Pricing" [level=3] [ref=e100]
+          - generic [ref=e101]:
+            - generic [ref=e102]: SKU *
+            - textbox [ref=e103]
+          - generic [ref=e104]:
+            - generic [ref=e105]: Barcode
+            - textbox "Auto-generated if blank" [ref=e106]
+          - generic [ref=e107]:
+            - generic [ref=e108]: Purchase Price *
+            - generic [ref=e109]:
+              - generic:
+                - generic: ₹
+              - spinbutton [ref=e110]: "0.00"
+          - generic [ref=e111]:
+            - generic [ref=e112]: Selling Price *
+            - generic [ref=e113]:
+              - generic:
+                - generic: ₹
+              - spinbutton [ref=e114]: "0.00"
+          - generic [ref=e115]:
+            - generic [ref=e116]: Tax Rate (%)
+            - spinbutton [ref=e117]: "0"
+          - generic [ref=e118]:
+            - generic [ref=e119]: Stock Quantity *
+            - spinbutton [ref=e120]: "0"
+          - generic [ref=e121]:
+            - generic [ref=e122]: Low-Stock Threshold
+            - spinbutton [ref=e123]: "10"
+          - generic [ref=e124]:
+            - generic [ref=e125]: Product Type *
+            - combobox [ref=e126]:
+              - option "Simple" [selected]
+              - option "Variant"
+        - generic [ref=e127]:
+          - checkbox "Active (visible in POS)" [checked] [ref=e128]
+          - generic [ref=e129]: Active (visible in POS)
+        - generic [ref=e130]:
+          - link "Cancel" [ref=e131] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products
+          - button "Save Product" [ref=e132] [cursor=pointer]

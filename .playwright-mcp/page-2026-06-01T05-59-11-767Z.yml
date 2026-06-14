@@ -1,0 +1,113 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - link [ref=e76] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products
+            - img [ref=e77]
+          - heading "eum placeat optio" [level=2] [ref=e79]
+        - generic [ref=e81]:
+          - link "Print Barcode" [ref=e82] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/22/barcode
+          - link "Edit" [ref=e83] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/22/edit
+    - main [ref=e84]:
+      - generic [ref=e86]:
+        - generic [ref=e88]:
+          - heading "Details" [level=3] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - term [ref=e92]: SKU
+              - definition [ref=e93]: SKU-ZI27XO
+            - generic [ref=e94]:
+              - term [ref=e95]: Barcode
+              - definition [ref=e96]: "015176179863"
+            - generic [ref=e97]:
+              - term [ref=e98]: Category
+              - definition [ref=e99]: Electronics
+            - generic [ref=e100]:
+              - term [ref=e101]: Type
+              - definition [ref=e102]: simple
+            - generic [ref=e103]:
+              - term [ref=e104]: Purchase Price
+              - definition [ref=e105]: ₹280.85
+            - generic [ref=e106]:
+              - term [ref=e107]: Selling Price
+              - definition [ref=e108]: ₹360.38
+            - generic [ref=e109]:
+              - term [ref=e110]: Tax Rate
+              - definition [ref=e111]: 5.00%
+            - generic [ref=e112]:
+              - term [ref=e113]: Stock
+              - definition [ref=e114]: 37 (threshold 10)
+          - generic [ref=e115]: Qui recusandae quia incidunt. Saepe atque consectetur molestiae similique maiores molestiae optio. Doloribus laboriosam optio voluptatem non molestiae eveniet.
+        - generic [ref=e117]:
+          - paragraph [ref=e118]: Barcode
+          - img "015176179863" [ref=e119]
+          - paragraph [ref=e120]: "015176179863"
+          - link "Download PNG" [ref=e121] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/22/barcode/download

@@ -1,0 +1,104 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Attributes" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/attributes
+        - img [ref=e25]
+        - text: Attributes
+      - link "Inventory" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e28]
+        - text: Inventory
+      - paragraph [ref=e31]: Sales
+      - link "Customers" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e33]
+        - text: Customers
+      - link "Analytics" [ref=e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e36]
+        - text: Analytics
+      - paragraph [ref=e39]: System
+      - link "Settings" [ref=e40] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e41]
+        - text: Settings
+      - link "Activity Log" [ref=e44] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e45]
+        - text: Activity Log
+    - generic [ref=e48]:
+      - generic [ref=e50]: A
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Administrator
+        - paragraph [ref=e53]: Admin
+        - button "Sign out" [ref=e55] [cursor=pointer]
+  - generic [ref=e56]:
+    - navigation [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - link [ref=e62] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e63]
+          - link "Dashboard" [ref=e66] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Administrator
+          - img [ref=e73]
+    - banner [ref=e75]:
+      - heading "Point of Sale" [level=2] [ref=e79]
+    - main [ref=e80]:
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: Scan barcode or search
+            - textbox "Scan barcode or type name / SKU..." [ref=e86]
+          - generic [ref=e89]: Type or scan to find products.
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: Customer
+              - button "+ Add new customer" [ref=e94] [cursor=pointer]
+            - textbox "Walk-in — search name or phone..." [ref=e96]
+          - generic [ref=e98]: Cart is empty.
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: Subtotal
+              - generic [ref=e102]: ₹0.00
+            - generic [ref=e103]:
+              - generic [ref=e104]: Tax
+              - generic [ref=e105]: ₹0.00
+            - generic [ref=e106]:
+              - generic [ref=e107]: Discount
+              - spinbutton [ref=e108]: "0"
+            - generic [ref=e109]:
+              - generic [ref=e110]: Total
+              - generic [ref=e111]: ₹0.00
+            - generic [ref=e112]:
+              - button "cash" [ref=e113] [cursor=pointer]
+              - button "upi" [ref=e114] [cursor=pointer]
+              - button "card" [ref=e115] [cursor=pointer]
+            - button "Checkout · ₹0.00" [disabled] [ref=e116]:
+              - generic [ref=e117]: Checkout · ₹0.00

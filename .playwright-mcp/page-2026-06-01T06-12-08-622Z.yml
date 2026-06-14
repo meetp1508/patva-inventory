@@ -1,0 +1,411 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - generic [ref=e74]:
+        - heading "Products" [level=2] [ref=e76]
+        - link "Add Product" [ref=e78] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/create
+          - img [ref=e79]
+          - text: Add Product
+    - main [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - img [ref=e85]
+            - generic [ref=e87]: Product created successfully.
+          - button "×" [ref=e88] [cursor=pointer]
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - textbox "Search name, SKU, or barcode..." [ref=e91]
+            - combobox [ref=e92]:
+              - option "All Categories" [selected]
+              - option "Apparel"
+              - option "Beverages"
+              - option "Dairy"
+              - option "Electronics"
+              - option "Groceries"
+              - option "Personal Care"
+              - option "Snacks"
+              - option "Stationery"
+            - button "Filter" [ref=e94] [cursor=pointer]
+          - table [ref=e96]:
+            - rowgroup [ref=e97]:
+              - row "Product Category SKU / Barcode Price Stock Status Actions" [ref=e98]:
+                - columnheader "Product" [ref=e99]
+                - columnheader "Category" [ref=e100]
+                - columnheader "SKU / Barcode" [ref=e101]
+                - columnheader "Price" [ref=e102]
+                - columnheader "Stock" [ref=e103]
+                - columnheader "Status" [ref=e104]
+                - columnheader "Actions" [ref=e105]
+            - rowgroup [ref=e106]:
+              - 'row "N/A QA Test Widget simple Electronics QA-WIDGET-001 029432750439 ₹149.99 Cost: ₹100.50 25 Active View Edit Delete" [ref=e107]':
+                - cell "N/A QA Test Widget simple" [ref=e108]:
+                  - generic [ref=e109]:
+                    - generic [ref=e110]: N/A
+                    - generic [ref=e111]:
+                      - generic [ref=e112]: QA Test Widget
+                      - generic [ref=e113]: simple
+                - cell "Electronics" [ref=e114]
+                - cell "QA-WIDGET-001 029432750439" [ref=e115]:
+                  - generic [ref=e116]: QA-WIDGET-001
+                  - generic [ref=e117]: "029432750439"
+                - 'cell "₹149.99 Cost: ₹100.50" [ref=e118]':
+                  - generic [ref=e119]: ₹149.99
+                  - generic [ref=e120]: "Cost: ₹100.50"
+                - cell "25" [ref=e121]:
+                  - generic [ref=e122]: "25"
+                - cell "Active" [ref=e123]:
+                  - generic [ref=e124]: Active
+                - cell "View Edit Delete" [ref=e125]:
+                  - link "View" [ref=e126] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/41
+                  - link "Edit" [ref=e127] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/41/edit
+                  - button "Delete" [ref=e129] [cursor=pointer]
+              - 'row "N/A eum placeat optio simple Electronics SKU-ZI27XO 015176179863 ₹360.38 Cost: ₹280.85 37 Active View Edit Delete" [ref=e130]':
+                - cell "N/A eum placeat optio simple" [ref=e131]:
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: N/A
+                    - generic [ref=e134]:
+                      - generic [ref=e135]: eum placeat optio
+                      - generic [ref=e136]: simple
+                - cell "Electronics" [ref=e137]
+                - cell "SKU-ZI27XO 015176179863" [ref=e138]:
+                  - generic [ref=e139]: SKU-ZI27XO
+                  - generic [ref=e140]: "015176179863"
+                - 'cell "₹360.38 Cost: ₹280.85" [ref=e141]':
+                  - generic [ref=e142]: ₹360.38
+                  - generic [ref=e143]: "Cost: ₹280.85"
+                - cell "37" [ref=e144]:
+                  - generic [ref=e145]: "37"
+                - cell "Active" [ref=e146]:
+                  - generic [ref=e147]: Active
+                - cell "View Edit Delete" [ref=e148]:
+                  - link "View" [ref=e149] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/22
+                  - link "Edit" [ref=e150] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/22/edit
+                  - button "Delete" [ref=e152] [cursor=pointer]
+              - 'row "N/A et repellat dolore simple Apparel SKU-LE45DO 122577741119 ₹252.12 Cost: ₹202.99 7 Active View Edit Delete" [ref=e153]':
+                - cell "N/A et repellat dolore simple" [ref=e154]:
+                  - generic [ref=e155]:
+                    - generic [ref=e156]: N/A
+                    - generic [ref=e157]:
+                      - generic [ref=e158]: et repellat dolore
+                      - generic [ref=e159]: simple
+                - cell "Apparel" [ref=e160]
+                - cell "SKU-LE45DO 122577741119" [ref=e161]:
+                  - generic [ref=e162]: SKU-LE45DO
+                  - generic [ref=e163]: "122577741119"
+                - 'cell "₹252.12 Cost: ₹202.99" [ref=e164]':
+                  - generic [ref=e165]: ₹252.12
+                  - generic [ref=e166]: "Cost: ₹202.99"
+                - cell "7" [ref=e167]:
+                  - generic [ref=e168]: "7"
+                - cell "Active" [ref=e169]:
+                  - generic [ref=e170]: Active
+                - cell "View Edit Delete" [ref=e171]:
+                  - link "View" [ref=e172] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/21
+                  - link "Edit" [ref=e173] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/21/edit
+                  - button "Delete" [ref=e175] [cursor=pointer]
+              - 'row "N/A corporis mollitia molestiae simple Dairy SKU-VI65ZM 478897361201 ₹235.88 Cost: ₹186.04 13 Active View Edit Delete" [ref=e176]':
+                - cell "N/A corporis mollitia molestiae simple" [ref=e177]:
+                  - generic [ref=e178]:
+                    - generic [ref=e179]: N/A
+                    - generic [ref=e180]:
+                      - generic [ref=e181]: corporis mollitia molestiae
+                      - generic [ref=e182]: simple
+                - cell "Dairy" [ref=e183]
+                - cell "SKU-VI65ZM 478897361201" [ref=e184]:
+                  - generic [ref=e185]: SKU-VI65ZM
+                  - generic [ref=e186]: "478897361201"
+                - 'cell "₹235.88 Cost: ₹186.04" [ref=e187]':
+                  - generic [ref=e188]: ₹235.88
+                  - generic [ref=e189]: "Cost: ₹186.04"
+                - cell "13" [ref=e190]:
+                  - generic [ref=e191]: "13"
+                - cell "Active" [ref=e192]:
+                  - generic [ref=e193]: Active
+                - cell "View Edit Delete" [ref=e194]:
+                  - link "View" [ref=e195] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/23
+                  - link "Edit" [ref=e196] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/23/edit
+                  - button "Delete" [ref=e198] [cursor=pointer]
+              - 'row "N/A et perferendis voluptatum simple Snacks SKU-CS25TF 896623541153 ₹428.62 Cost: ₹355.50 12 Active View Edit Delete" [ref=e199]':
+                - cell "N/A et perferendis voluptatum simple" [ref=e200]:
+                  - generic [ref=e201]:
+                    - generic [ref=e202]: N/A
+                    - generic [ref=e203]:
+                      - generic [ref=e204]: et perferendis voluptatum
+                      - generic [ref=e205]: simple
+                - cell "Snacks" [ref=e206]
+                - cell "SKU-CS25TF 896623541153" [ref=e207]:
+                  - generic [ref=e208]: SKU-CS25TF
+                  - generic [ref=e209]: "896623541153"
+                - 'cell "₹428.62 Cost: ₹355.50" [ref=e210]':
+                  - generic [ref=e211]: ₹428.62
+                  - generic [ref=e212]: "Cost: ₹355.50"
+                - cell "12" [ref=e213]:
+                  - generic [ref=e214]: "12"
+                - cell "Active" [ref=e215]:
+                  - generic [ref=e216]: Active
+                - cell "View Edit Delete" [ref=e217]:
+                  - link "View" [ref=e218] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/24
+                  - link "Edit" [ref=e219] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/24/edit
+                  - button "Delete" [ref=e221] [cursor=pointer]
+              - 'row "N/A sed molestiae non simple Groceries SKU-FO45AM 974974097252 ₹347.82 Cost: ₹283.04 49 Active View Edit Delete" [ref=e222]':
+                - cell "N/A sed molestiae non simple" [ref=e223]:
+                  - generic [ref=e224]:
+                    - generic [ref=e225]: N/A
+                    - generic [ref=e226]:
+                      - generic [ref=e227]: sed molestiae non
+                      - generic [ref=e228]: simple
+                - cell "Groceries" [ref=e229]
+                - cell "SKU-FO45AM 974974097252" [ref=e230]:
+                  - generic [ref=e231]: SKU-FO45AM
+                  - generic [ref=e232]: "974974097252"
+                - 'cell "₹347.82 Cost: ₹283.04" [ref=e233]':
+                  - generic [ref=e234]: ₹347.82
+                  - generic [ref=e235]: "Cost: ₹283.04"
+                - cell "49" [ref=e236]:
+                  - generic [ref=e237]: "49"
+                - cell "Active" [ref=e238]:
+                  - generic [ref=e239]: Active
+                - cell "View Edit Delete" [ref=e240]:
+                  - link "View" [ref=e241] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/25
+                  - link "Edit" [ref=e242] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/25/edit
+                  - button "Delete" [ref=e244] [cursor=pointer]
+              - 'row "N/A sapiente quisquam velit simple Dairy SKU-LW38OF 040906569586 ₹438.02 Cost: ₹381.45 0 Active View Edit Delete" [ref=e245]':
+                - cell "N/A sapiente quisquam velit simple" [ref=e246]:
+                  - generic [ref=e247]:
+                    - generic [ref=e248]: N/A
+                    - generic [ref=e249]:
+                      - generic [ref=e250]: sapiente quisquam velit
+                      - generic [ref=e251]: simple
+                - cell "Dairy" [ref=e252]
+                - cell "SKU-LW38OF 040906569586" [ref=e253]:
+                  - generic [ref=e254]: SKU-LW38OF
+                  - generic [ref=e255]: "040906569586"
+                - 'cell "₹438.02 Cost: ₹381.45" [ref=e256]':
+                  - generic [ref=e257]: ₹438.02
+                  - generic [ref=e258]: "Cost: ₹381.45"
+                - cell "0" [ref=e259]:
+                  - generic [ref=e260]: "0"
+                - cell "Active" [ref=e261]:
+                  - generic [ref=e262]: Active
+                - cell "View Edit Delete" [ref=e263]:
+                  - link "View" [ref=e264] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/26
+                  - link "Edit" [ref=e265] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/26/edit
+                  - button "Delete" [ref=e267] [cursor=pointer]
+              - 'row "N/A veniam doloribus nulla simple Beverages SKU-FX41QI 907533549828 ₹402.62 Cost: ₹390.41 31 Active View Edit Delete" [ref=e268]':
+                - cell "N/A veniam doloribus nulla simple" [ref=e269]:
+                  - generic [ref=e270]:
+                    - generic [ref=e271]: N/A
+                    - generic [ref=e272]:
+                      - generic [ref=e273]: veniam doloribus nulla
+                      - generic [ref=e274]: simple
+                - cell "Beverages" [ref=e275]
+                - cell "SKU-FX41QI 907533549828" [ref=e276]:
+                  - generic [ref=e277]: SKU-FX41QI
+                  - generic [ref=e278]: "907533549828"
+                - 'cell "₹402.62 Cost: ₹390.41" [ref=e279]':
+                  - generic [ref=e280]: ₹402.62
+                  - generic [ref=e281]: "Cost: ₹390.41"
+                - cell "31" [ref=e282]:
+                  - generic [ref=e283]: "31"
+                - cell "Active" [ref=e284]:
+                  - generic [ref=e285]: Active
+                - cell "View Edit Delete" [ref=e286]:
+                  - link "View" [ref=e287] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/27
+                  - link "Edit" [ref=e288] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/27/edit
+                  - button "Delete" [ref=e290] [cursor=pointer]
+              - 'row "N/A quisquam in id simple Electronics SKU-MU51XO 425367412161 ₹271.10 Cost: ₹182.40 40 Active View Edit Delete" [ref=e291]':
+                - cell "N/A quisquam in id simple" [ref=e292]:
+                  - generic [ref=e293]:
+                    - generic [ref=e294]: N/A
+                    - generic [ref=e295]:
+                      - generic [ref=e296]: quisquam in id
+                      - generic [ref=e297]: simple
+                - cell "Electronics" [ref=e298]
+                - cell "SKU-MU51XO 425367412161" [ref=e299]:
+                  - generic [ref=e300]: SKU-MU51XO
+                  - generic [ref=e301]: "425367412161"
+                - 'cell "₹271.10 Cost: ₹182.40" [ref=e302]':
+                  - generic [ref=e303]: ₹271.10
+                  - generic [ref=e304]: "Cost: ₹182.40"
+                - cell "40" [ref=e305]:
+                  - generic [ref=e306]: "40"
+                - cell "Active" [ref=e307]:
+                  - generic [ref=e308]: Active
+                - cell "View Edit Delete" [ref=e309]:
+                  - link "View" [ref=e310] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/28
+                  - link "Edit" [ref=e311] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/28/edit
+                  - button "Delete" [ref=e313] [cursor=pointer]
+              - 'row "N/A laudantium quam voluptates simple Dairy SKU-YL69VZ 909885230287 ₹489.58 Cost: ₹475.86 1 Active View Edit Delete" [ref=e314]':
+                - cell "N/A laudantium quam voluptates simple" [ref=e315]:
+                  - generic [ref=e316]:
+                    - generic [ref=e317]: N/A
+                    - generic [ref=e318]:
+                      - generic [ref=e319]: laudantium quam voluptates
+                      - generic [ref=e320]: simple
+                - cell "Dairy" [ref=e321]
+                - cell "SKU-YL69VZ 909885230287" [ref=e322]:
+                  - generic [ref=e323]: SKU-YL69VZ
+                  - generic [ref=e324]: "909885230287"
+                - 'cell "₹489.58 Cost: ₹475.86" [ref=e325]':
+                  - generic [ref=e326]: ₹489.58
+                  - generic [ref=e327]: "Cost: ₹475.86"
+                - cell "1" [ref=e328]:
+                  - generic [ref=e329]: "1"
+                - cell "Active" [ref=e330]:
+                  - generic [ref=e331]: Active
+                - cell "View Edit Delete" [ref=e332]:
+                  - link "View" [ref=e333] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/29
+                  - link "Edit" [ref=e334] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/29/edit
+                  - button "Delete" [ref=e336] [cursor=pointer]
+              - 'row "N/A esse sit repudiandae simple Beverages SKU-DJ99PS 711491481261 ₹314.56 Cost: ₹228.92 75 Active View Edit Delete" [ref=e337]':
+                - cell "N/A esse sit repudiandae simple" [ref=e338]:
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: N/A
+                    - generic [ref=e341]:
+                      - generic [ref=e342]: esse sit repudiandae
+                      - generic [ref=e343]: simple
+                - cell "Beverages" [ref=e344]
+                - cell "SKU-DJ99PS 711491481261" [ref=e345]:
+                  - generic [ref=e346]: SKU-DJ99PS
+                  - generic [ref=e347]: "711491481261"
+                - 'cell "₹314.56 Cost: ₹228.92" [ref=e348]':
+                  - generic [ref=e349]: ₹314.56
+                  - generic [ref=e350]: "Cost: ₹228.92"
+                - cell "75" [ref=e351]:
+                  - generic [ref=e352]: "75"
+                - cell "Active" [ref=e353]:
+                  - generic [ref=e354]: Active
+                - cell "View Edit Delete" [ref=e355]:
+                  - link "View" [ref=e356] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/30
+                  - link "Edit" [ref=e357] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/30/edit
+                  - button "Delete" [ref=e359] [cursor=pointer]
+              - 'row "N/A neque culpa voluptatem simple Beverages SKU-DD22AM 158280960990 ₹338.72 Cost: ₹243.79 73 Active View Edit Delete" [ref=e360]':
+                - cell "N/A neque culpa voluptatem simple" [ref=e361]:
+                  - generic [ref=e362]:
+                    - generic [ref=e363]: N/A
+                    - generic [ref=e364]:
+                      - generic [ref=e365]: neque culpa voluptatem
+                      - generic [ref=e366]: simple
+                - cell "Beverages" [ref=e367]
+                - cell "SKU-DD22AM 158280960990" [ref=e368]:
+                  - generic [ref=e369]: SKU-DD22AM
+                  - generic [ref=e370]: "158280960990"
+                - 'cell "₹338.72 Cost: ₹243.79" [ref=e371]':
+                  - generic [ref=e372]: ₹338.72
+                  - generic [ref=e373]: "Cost: ₹243.79"
+                - cell "73" [ref=e374]:
+                  - generic [ref=e375]: "73"
+                - cell "Active" [ref=e376]:
+                  - generic [ref=e377]: Active
+                - cell "View Edit Delete" [ref=e378]:
+                  - link "View" [ref=e379] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/39
+                  - link "Edit" [ref=e380] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8000/products/39/edit
+                  - button "Delete" [ref=e382] [cursor=pointer]
+          - navigation "Pagination Navigation" [ref=e384]:
+            - generic [ref=e385]:
+              - paragraph [ref=e387]: Showing 1 to 12 of 41 results
+              - generic [ref=e389]:
+                - generic "&laquo; Previous" [ref=e390]:
+                  - img [ref=e392]
+                - generic [ref=e395]: "1"
+                - link "Go to page 2" [ref=e396] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/products?page=2
+                  - text: "2"
+                - link "Go to page 3" [ref=e397] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/products?page=3
+                  - text: "3"
+                - link "Go to page 4" [ref=e398] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/products?page=4
+                  - text: "4"
+                - link "Next &raquo;" [ref=e399] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/products?page=2
+                  - img [ref=e400]

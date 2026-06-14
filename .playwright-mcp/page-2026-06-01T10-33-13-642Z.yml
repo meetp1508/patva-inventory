@@ -1,0 +1,219 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Attributes" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/attributes
+        - img [ref=e25]
+        - text: Attributes
+      - link "Inventory" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e28]
+        - text: Inventory
+      - paragraph [ref=e31]: Sales
+      - link "Customers" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e33]
+        - text: Customers
+      - link "Analytics" [ref=e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e36]
+        - text: Analytics
+      - paragraph [ref=e39]: System
+      - link "Settings" [ref=e40] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e41]
+        - text: Settings
+      - link "Activity Log" [ref=e44] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e45]
+        - text: Activity Log
+    - generic [ref=e48]:
+      - generic [ref=e50]: A
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Administrator
+        - paragraph [ref=e53]: Admin
+        - button "Sign out" [ref=e55] [cursor=pointer]
+  - generic [ref=e56]:
+    - navigation [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - link [ref=e62] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e63]
+          - link "Dashboard" [ref=e66] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Administrator
+          - img [ref=e73]
+    - banner [ref=e75]:
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - link [ref=e79] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products
+            - img [ref=e80]
+          - heading "Edit Product — Classic Shirt" [level=2] [ref=e82]
+        - link "Print Barcode" [ref=e84] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/43/barcode
+    - main [ref=e85]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - heading "Basic Information" [level=3] [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]: Product Name *
+            - textbox [ref=e94]: Classic Shirt
+          - generic [ref=e95]:
+            - generic [ref=e96]: Category
+            - combobox [ref=e97]:
+              - option "Uncategorized" [selected]
+              - option "Apparel"
+              - option "Beverages"
+              - option "Dairy"
+              - option "Electronics"
+              - option "Groceries"
+              - option "Personal Care"
+              - option "Snacks"
+              - option "Stationery"
+          - generic [ref=e98]:
+            - generic [ref=e99]: Description
+            - textbox [ref=e100]
+          - generic [ref=e101]:
+            - generic [ref=e102]: Images
+            - generic [ref=e103] [cursor=pointer]:
+              - img [ref=e104]
+              - paragraph [ref=e106]: Click to upload or drag & drop
+              - paragraph [ref=e107]: PNG, JPG, WEBP — up to 2 MB each, max 8 images
+          - heading "Inventory & Pricing" [level=3] [ref=e109]
+          - generic [ref=e110]:
+            - generic [ref=e111]: SKU *
+            - textbox [ref=e112]: SHIRT-CLASSIC
+          - generic [ref=e113]:
+            - generic [ref=e114]: Barcode
+            - generic [ref=e115]:
+              - textbox [ref=e116]: "030994858123"
+              - button "↻" [ref=e117] [cursor=pointer]
+          - generic [ref=e118]:
+            - generic [ref=e119]: Purchase Price *
+            - generic [ref=e120]:
+              - generic:
+                - generic: ₹
+              - spinbutton [ref=e121]: "300.00"
+          - generic [ref=e122]:
+            - generic [ref=e123]: Selling Price *
+            - generic [ref=e124]:
+              - generic:
+                - generic: ₹
+              - spinbutton [ref=e125]: "500.00"
+          - generic [ref=e126]:
+            - generic [ref=e127]: Tax Rate (%)
+            - spinbutton [ref=e128]: "0.00"
+          - generic [ref=e129]:
+            - generic [ref=e130]: Stock Quantity *
+            - spinbutton [ref=e131]: "100"
+          - generic [ref=e132]:
+            - generic [ref=e133]: Low-Stock Threshold
+            - spinbutton [ref=e134]: "10"
+          - generic [ref=e135]:
+            - generic [ref=e136]: Product Type *
+            - combobox [ref=e137]:
+              - option "Simple"
+              - option "Variant" [selected]
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - heading "Variants" [level=3] [ref=e141]
+            - link "Manage attributes ↗" [ref=e142] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/attributes
+          - paragraph [ref=e143]: Tick the options this product comes in. Every combination is generated automatically — just set the stock for each.
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: Color
+              - generic [ref=e147]:
+                - button "Red" [ref=e148] [cursor=pointer]
+                - button "Blue" [ref=e149] [cursor=pointer]
+                - button "Green" [ref=e150] [cursor=pointer]
+                - button "Black" [ref=e151] [cursor=pointer]
+            - generic [ref=e152]:
+              - generic [ref=e153]: Size
+              - generic [ref=e154]:
+                - button "S" [ref=e155] [cursor=pointer]
+                - button "M" [ref=e156] [cursor=pointer]
+                - button "L" [ref=e157] [cursor=pointer]
+                - button "XL" [ref=e158] [cursor=pointer]
+          - table [ref=e160]:
+            - rowgroup [ref=e161]:
+              - row "Variant SKU + Price Stock" [ref=e162]:
+                - columnheader "Variant" [ref=e163]
+                - columnheader "SKU" [ref=e164]
+                - columnheader "+ Price" [ref=e165]
+                - columnheader "Stock" [ref=e166]
+                - columnheader [ref=e167]
+            - rowgroup [ref=e168]:
+              - row "Green / L SHIRT-CLASSIC-GREEN-L ×" [ref=e169]:
+                - cell "Green / L" [ref=e170]
+                - cell "SHIRT-CLASSIC-GREEN-L" [ref=e171]:
+                  - textbox [ref=e172]: SHIRT-CLASSIC-GREEN-L
+                - cell [ref=e173]:
+                  - spinbutton [ref=e174]: "0"
+                - cell [ref=e175]:
+                  - spinbutton [ref=e176]: "10"
+                - cell "×" [ref=e177]:
+                  - button "×" [ref=e178] [cursor=pointer]
+              - row "Green / XL SHIRT-CLASSIC-GREEN-XL ×" [ref=e179]:
+                - cell "Green / XL" [ref=e180]
+                - cell "SHIRT-CLASSIC-GREEN-XL" [ref=e181]:
+                  - textbox [ref=e182]: SHIRT-CLASSIC-GREEN-XL
+                - cell [ref=e183]:
+                  - spinbutton [ref=e184]: "0"
+                - cell [ref=e185]:
+                  - spinbutton [ref=e186]: "20"
+                - cell "×" [ref=e187]:
+                  - button "×" [ref=e188] [cursor=pointer]
+              - row "Black / L SHIRT-CLASSIC-BLACK-L ×" [ref=e189]:
+                - cell "Black / L" [ref=e190]
+                - cell "SHIRT-CLASSIC-BLACK-L" [ref=e191]:
+                  - textbox [ref=e192]: SHIRT-CLASSIC-BLACK-L
+                - cell [ref=e193]:
+                  - spinbutton [ref=e194]: "0"
+                - cell [ref=e195]:
+                  - spinbutton [ref=e196]: "30"
+                - cell "×" [ref=e197]:
+                  - button "×" [ref=e198] [cursor=pointer]
+              - row "Black / XL SHIRT-CLASSIC-BLACK-XL ×" [ref=e199]:
+                - cell "Black / XL" [ref=e200]
+                - cell "SHIRT-CLASSIC-BLACK-XL" [ref=e201]:
+                  - textbox [ref=e202]: SHIRT-CLASSIC-BLACK-XL
+                - cell [ref=e203]:
+                  - spinbutton [ref=e204]: "0"
+                - cell [ref=e205]:
+                  - spinbutton [ref=e206]: "40"
+                - cell "×" [ref=e207]:
+                  - button "×" [ref=e208] [cursor=pointer]
+          - paragraph [ref=e209]: 4 variant(s). Product stock will be the total of all variant stock.
+        - generic [ref=e210]:
+          - checkbox "Active (visible in POS)" [checked] [ref=e211]
+          - generic [ref=e212]: Active (visible in POS)
+        - generic [ref=e214]:
+          - link "Cancel" [ref=e215] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products
+          - button "Update Product" [ref=e216] [cursor=pointer]

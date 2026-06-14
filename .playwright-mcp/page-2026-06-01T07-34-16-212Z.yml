@@ -1,0 +1,205 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - heading "Point of Sale" [level=2] [ref=e76]
+    - main [ref=e77]:
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Scan barcode or search
+            - textbox "Scan barcode or type name / SKU..." [ref=e83]
+          - generic [ref=e85]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: veniam est mollitia
+                - generic [ref=e117]: SKU-KD70KR · stock 74
+              - generic [ref=e118]: ₹194.03
+              - button "Add" [ref=e119] [cursor=pointer]
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - generic [ref=e122]: dolor omnis omnis
+                - generic [ref=e123]: SKU-OE65EO · stock 67
+              - generic [ref=e124]: ₹433.85
+              - button "Add" [ref=e125] [cursor=pointer]
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - generic [ref=e128]: vel sit facilis
+                - generic [ref=e129]: SKU-NV81MB · stock 9
+              - generic [ref=e130]: ₹352.38
+              - button "Add" [ref=e131] [cursor=pointer]
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: sit quod maiores
+                - generic [ref=e135]: SKU-MO96DS · stock 72
+              - generic [ref=e136]: ₹275.80
+              - button "Add" [ref=e137] [cursor=pointer]
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - generic [ref=e140]: ex fuga eos
+                - generic [ref=e141]: SKU-SX44NL · stock 55
+              - generic [ref=e142]: ₹476.46
+              - button "Add" [ref=e143] [cursor=pointer]
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - generic [ref=e146]: voluptatibus est voluptate
+                - generic [ref=e147]: SKU-CM03ZY · stock 56
+              - generic [ref=e148]: ₹193.31
+              - button "Add" [ref=e149] [cursor=pointer]
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - generic [ref=e152]: ratione autem dignissimos
+                - generic [ref=e153]: SKU-PF74KQ · stock 64
+              - generic [ref=e154]: ₹65.86
+              - button "Add" [ref=e155] [cursor=pointer]
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]: id sunt aut
+                - generic [ref=e159]: SKU-QT38LQ · stock 9
+              - generic [ref=e160]: ₹281.01
+              - button "Add" [ref=e161] [cursor=pointer]
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: eum aut numquam
+                - generic [ref=e165]: SKU-TM77IW · stock 15
+              - generic [ref=e166]: ₹314.64
+              - button "Add" [ref=e167] [cursor=pointer]
+            - generic [ref=e168]:
+              - generic [ref=e169]:
+                - generic [ref=e170]: aperiam porro ut
+                - generic [ref=e171]: SKU-GY82KW · stock 31
+              - generic [ref=e172]: ₹228.04
+              - button "Add" [ref=e173] [cursor=pointer]
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - generic [ref=e176]: nulla et error
+                - generic [ref=e177]: SKU-ZF86RA · stock 30
+              - generic [ref=e178]: ₹100.07
+              - button "Add" [ref=e179] [cursor=pointer]
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - generic [ref=e182]: est natus est
+                - generic [ref=e183]: SKU-IV19MQ · stock 98
+              - generic [ref=e184]: ₹509.98
+              - button "Add" [ref=e185] [cursor=pointer]
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e188]: sunt corporis ducimus
+                - generic [ref=e189]: SKU-DV01NT · stock 98
+              - generic [ref=e190]: ₹518.96
+              - button "Add" [ref=e191] [cursor=pointer]
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e194]: iure at aliquid
+                - generic [ref=e195]: SKU-TI67ME · stock 56
+              - generic [ref=e196]: ₹519.18
+              - button "Add" [ref=e197] [cursor=pointer]
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - generic [ref=e200]: ut corporis velit
+                - generic [ref=e201]: SKU-TG39KH · stock 79
+              - generic [ref=e202]: ₹377.11
+              - button "Add" [ref=e203] [cursor=pointer]
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Customer
+              - button "Choose existing" [ref=e204] [cursor=pointer]
+            - generic [ref=e205]:
+              - textbox "Customer name *" [active] [ref=e206]
+              - textbox "Phone number *" [ref=e207]
+              - textbox "Address (optional)" [ref=e208]
+              - paragraph [ref=e209]: Saved automatically when you complete the sale. Existing phone numbers are reused.
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - generic [ref=e213]: veniam est mollitia
+                - generic [ref=e214]: ₹194.03 × 1
+              - generic [ref=e215]: ₹194.03
+              - button "×" [ref=e216] [cursor=pointer]
+            - generic [ref=e217]:
+              - button "−" [ref=e218] [cursor=pointer]
+              - spinbutton [ref=e219]: "1"
+              - button "+" [ref=e220] [cursor=pointer]
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: Subtotal
+              - generic [ref=e98]: ₹194.03
+            - generic [ref=e99]:
+              - generic [ref=e100]: Tax
+              - generic [ref=e101]: ₹0.00
+            - generic [ref=e102]:
+              - generic [ref=e103]: Discount
+              - spinbutton [ref=e104]: "0"
+            - generic [ref=e105]:
+              - generic [ref=e106]: Total
+              - generic [ref=e107]: ₹194.03
+            - generic [ref=e108]:
+              - button "cash" [ref=e109] [cursor=pointer]
+              - button "upi" [ref=e110] [cursor=pointer]
+              - button "card" [ref=e111] [cursor=pointer]
+            - button "Checkout · ₹194.03" [ref=e221] [cursor=pointer]:
+              - generic [ref=e113]: Checkout · ₹194.03
+            - paragraph [ref=e222]: Enter the customer name and phone, or switch to "Choose existing".

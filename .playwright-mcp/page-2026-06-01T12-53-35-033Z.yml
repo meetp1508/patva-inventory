@@ -1,0 +1,513 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Attributes" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/attributes
+        - img [ref=e25]
+        - text: Attributes
+      - link "Inventory" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e28]
+        - text: Inventory
+      - paragraph [ref=e31]: Sales
+      - link "Customers" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e33]
+        - text: Customers
+      - link "Analytics" [ref=e35] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e36]
+        - text: Analytics
+      - paragraph [ref=e39]: System
+      - link "Settings" [ref=e40] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e41]
+        - text: Settings
+      - link "Activity Log" [ref=e44] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e45]
+        - text: Activity Log
+    - generic [ref=e48]:
+      - generic [ref=e50]: A
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Administrator
+        - paragraph [ref=e53]: Admin
+        - button "Sign out" [ref=e55] [cursor=pointer]
+  - generic [ref=e56]:
+    - navigation [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - link [ref=e62] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e63]
+          - link "Dashboard" [ref=e66] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Administrator
+          - img [ref=e73]
+    - banner [ref=e75]:
+      - generic [ref=e77]:
+        - heading "Analytics & Reports" [level=2] [ref=e79]
+        - generic [ref=e81]:
+          - link "Export Sales (XLSX)" [ref=e82] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/reports/export/sales?from=2026-05-03&to=2026-06-01&format=xlsx
+          - link "CSV" [ref=e83] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/reports/export/sales?from=2026-05-03&to=2026-06-01&format=csv
+    - main [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: From
+            - textbox [ref=e89]: 2026-05-03
+          - generic [ref=e90]:
+            - generic [ref=e91]: To
+            - textbox [ref=e92]: 2026-06-01
+          - button "Apply" [ref=e93] [cursor=pointer]
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: Revenue
+            - paragraph [ref=e97]: ₹131,953.00
+          - generic [ref=e98]:
+            - paragraph [ref=e99]: Cost of Goods
+            - paragraph [ref=e100]: ₹101,496.62
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: Profit
+            - paragraph [ref=e103]: ₹30,456.38
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: Margin
+            - paragraph [ref=e106]: 23.08%
+        - heading "Sales Trend" [level=3] [ref=e108]
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - heading "Top Products" [level=3] [ref=e113]
+            - table [ref=e114]:
+              - rowgroup [ref=e115]:
+                - row "Product Qty Revenue" [ref=e116]:
+                  - columnheader "Product" [ref=e117]
+                  - columnheader "Qty" [ref=e118]
+                  - columnheader "Revenue" [ref=e119]
+              - rowgroup [ref=e120]:
+                - row "iure at aliquid 18 ₹10,466.64" [ref=e121]:
+                  - cell "iure at aliquid" [ref=e122]
+                  - cell "18" [ref=e123]
+                  - cell "₹10,466.64" [ref=e124]
+                - row "est commodi cupiditate 16 ₹9,262.14" [ref=e125]:
+                  - cell "est commodi cupiditate" [ref=e126]
+                  - cell "16" [ref=e127]
+                  - cell "₹9,262.14" [ref=e128]
+                - row "sed molestiae non 16 ₹6,566.85" [ref=e129]:
+                  - cell "sed molestiae non" [ref=e130]
+                  - cell "16" [ref=e131]
+                  - cell "₹6,566.85" [ref=e132]
+                - row "eum placeat optio 15 ₹5,676.00" [ref=e133]:
+                  - cell "eum placeat optio" [ref=e134]
+                  - cell "15" [ref=e135]
+                  - cell "₹5,676.00" [ref=e136]
+                - row "perspiciatis ut hic 14 ₹7,237.25" [ref=e137]:
+                  - cell "perspiciatis ut hic" [ref=e138]
+                  - cell "14" [ref=e139]
+                  - cell "₹7,237.25" [ref=e140]
+                - row "voluptatem dolores numquam 13 ₹7,086.78" [ref=e141]:
+                  - cell "voluptatem dolores numquam" [ref=e142]
+                  - cell "13" [ref=e143]
+                  - cell "₹7,086.78" [ref=e144]
+                - row "labore molestiae sed 12 ₹1,532.52" [ref=e145]:
+                  - cell "labore molestiae sed" [ref=e146]
+                  - cell "12" [ref=e147]
+                  - cell "₹1,532.52" [ref=e148]
+                - row "neque culpa voluptatem 12 ₹4,552.39" [ref=e149]:
+                  - cell "neque culpa voluptatem" [ref=e150]
+                  - cell "12" [ref=e151]
+                  - cell "₹4,552.39" [ref=e152]
+                - row "sunt corporis ducimus 12 ₹6,974.85" [ref=e153]:
+                  - cell "sunt corporis ducimus" [ref=e154]
+                  - cell "12" [ref=e155]
+                  - cell "₹6,974.85" [ref=e156]
+                - row "ut corporis velit 12 ₹4,525.32" [ref=e157]:
+                  - cell "ut corporis velit" [ref=e158]
+                  - cell "12" [ref=e159]
+                  - cell "₹4,525.32" [ref=e160]
+          - generic [ref=e161]:
+            - heading "Top Customers" [level=3] [ref=e163]
+            - table [ref=e164]:
+              - rowgroup [ref=e165]:
+                - row "Customer Orders Spent" [ref=e166]:
+                  - columnheader "Customer" [ref=e167]
+                  - columnheader "Orders" [ref=e168]
+                  - columnheader "Spent" [ref=e169]
+              - rowgroup [ref=e170]:
+                - row "Dr. Jennifer Prohaska MD 9049121582 4 ₹8,347.83" [ref=e171]:
+                  - cell "Dr. Jennifer Prohaska MD 9049121582" [ref=e172]:
+                    - text: Dr. Jennifer Prohaska MD
+                    - generic [ref=e173]: "9049121582"
+                  - cell "4" [ref=e174]
+                  - cell "₹8,347.83" [ref=e175]
+                - row "Dorcas Wyman DVM 9964473536 4 ₹6,685.96" [ref=e176]:
+                  - cell "Dorcas Wyman DVM 9964473536" [ref=e177]:
+                    - text: Dorcas Wyman DVM
+                    - generic [ref=e178]: "9964473536"
+                  - cell "4" [ref=e179]
+                  - cell "₹6,685.96" [ref=e180]
+                - row "Georgiana Renner IV 9439818792 3 ₹6,436.45" [ref=e181]:
+                  - cell "Georgiana Renner IV 9439818792" [ref=e182]:
+                    - text: Georgiana Renner IV
+                    - generic [ref=e183]: "9439818792"
+                  - cell "3" [ref=e184]
+                  - cell "₹6,436.45" [ref=e185]
+                - row "Mr. Adolphus Will 9794008468 3 ₹5,657.46" [ref=e186]:
+                  - cell "Mr. Adolphus Will 9794008468" [ref=e187]:
+                    - text: Mr. Adolphus Will
+                    - generic [ref=e188]: "9794008468"
+                  - cell "3" [ref=e189]
+                  - cell "₹5,657.46" [ref=e190]
+                - row "Nicolas Mertz 9450668548 3 ₹5,160.42" [ref=e191]:
+                  - cell "Nicolas Mertz 9450668548" [ref=e192]:
+                    - text: Nicolas Mertz
+                    - generic [ref=e193]: "9450668548"
+                  - cell "3" [ref=e194]
+                  - cell "₹5,160.42" [ref=e195]
+                - row "Brycen Schneider 9028024542 2 ₹4,916.74" [ref=e196]:
+                  - cell "Brycen Schneider 9028024542" [ref=e197]:
+                    - text: Brycen Schneider
+                    - generic [ref=e198]: "9028024542"
+                  - cell "2" [ref=e199]
+                  - cell "₹4,916.74" [ref=e200]
+                - row "Dwight Greenfelder 9236485054 2 ₹4,459.34" [ref=e201]:
+                  - cell "Dwight Greenfelder 9236485054" [ref=e202]:
+                    - text: Dwight Greenfelder
+                    - generic [ref=e203]: "9236485054"
+                  - cell "2" [ref=e204]
+                  - cell "₹4,459.34" [ref=e205]
+                - row "Abdullah D'Amore 9213894448 1 ₹3,645.01" [ref=e206]:
+                  - cell "Abdullah D'Amore 9213894448" [ref=e207]:
+                    - text: Abdullah D'Amore
+                    - generic [ref=e208]: "9213894448"
+                  - cell "1" [ref=e209]
+                  - cell "₹3,645.01" [ref=e210]
+                - row "Melyssa Rodriguez 9788036728 2 ₹3,382.87" [ref=e211]:
+                  - cell "Melyssa Rodriguez 9788036728" [ref=e212]:
+                    - text: Melyssa Rodriguez
+                    - generic [ref=e213]: "9788036728"
+                  - cell "2" [ref=e214]
+                  - cell "₹3,382.87" [ref=e215]
+                - row "Vicente Langosh 9397959414 2 ₹2,458.08" [ref=e216]:
+                  - cell "Vicente Langosh 9397959414" [ref=e217]:
+                    - text: Vicente Langosh
+                    - generic [ref=e218]: "9397959414"
+                  - cell "2" [ref=e219]
+                  - cell "₹2,458.08" [ref=e220]
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - heading "Inventory Valuation" [level=3] [ref=e223]
+            - link "Export XLSX" [ref=e224] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/reports/export/inventory?format=xlsx
+          - table [ref=e226]:
+            - rowgroup [ref=e227]:
+              - row "Product Stock Cost Value" [ref=e228]:
+                - columnheader "Product" [ref=e229]
+                - columnheader "Stock" [ref=e230]
+                - columnheader "Cost" [ref=e231]
+                - columnheader "Value" [ref=e232]
+            - rowgroup [ref=e233]:
+              - row "sunt corporis ducimus SKU-DV01NT 98 ₹43,806.00 ₹50,858.08" [ref=e234]:
+                - cell "sunt corporis ducimus SKU-DV01NT" [ref=e235]:
+                  - text: sunt corporis ducimus
+                  - generic [ref=e236]: SKU-DV01NT
+                - cell "98" [ref=e237]
+                - cell "₹43,806.00" [ref=e238]
+                - cell "₹50,858.08" [ref=e239]
+              - row "est natus est SKU-IV19MQ 98 ₹48,370.84 ₹49,978.04" [ref=e240]:
+                - cell "est natus est SKU-IV19MQ" [ref=e241]:
+                  - text: est natus est
+                  - generic [ref=e242]: SKU-IV19MQ
+                - cell "98" [ref=e243]
+                - cell "₹48,370.84" [ref=e244]
+                - cell "₹49,978.04" [ref=e245]
+              - row "perspiciatis ut hic SKU-TU22LH 94 ₹35,202.06 ₹41,180.46" [ref=e246]:
+                - cell "perspiciatis ut hic SKU-TU22LH" [ref=e247]:
+                  - text: perspiciatis ut hic
+                  - generic [ref=e248]: SKU-TU22LH
+                - cell "94" [ref=e249]
+                - cell "₹35,202.06" [ref=e250]
+                - cell "₹41,180.46" [ref=e251]
+              - row "est commodi cupiditate SKU-YZ48SY 65 ₹25,569.70 ₹31,887.70" [ref=e252]:
+                - cell "est commodi cupiditate SKU-YZ48SY" [ref=e253]:
+                  - text: est commodi cupiditate
+                  - generic [ref=e254]: SKU-YZ48SY
+                - cell "65" [ref=e255]
+                - cell "₹25,569.70" [ref=e256]
+                - cell "₹31,887.70" [ref=e257]
+              - row "ut corporis velit SKU-TG39KH 79 ₹27,134.13 ₹29,791.69" [ref=e258]:
+                - cell "ut corporis velit SKU-TG39KH" [ref=e259]:
+                  - text: ut corporis velit
+                  - generic [ref=e260]: SKU-TG39KH
+                - cell "79" [ref=e261]
+                - cell "₹27,134.13" [ref=e262]
+                - cell "₹29,791.69" [ref=e263]
+              - row "iure at aliquid SKU-TI67ME 56 ₹27,913.76 ₹29,074.08" [ref=e264]:
+                - cell "iure at aliquid SKU-TI67ME" [ref=e265]:
+                  - text: iure at aliquid
+                  - generic [ref=e266]: SKU-TI67ME
+                - cell "56" [ref=e267]
+                - cell "₹27,913.76" [ref=e268]
+                - cell "₹29,074.08" [ref=e269]
+              - row "dolor omnis omnis SKU-OE65EO 67 ₹28,187.57 ₹29,067.95" [ref=e270]:
+                - cell "dolor omnis omnis SKU-OE65EO" [ref=e271]:
+                  - text: dolor omnis omnis
+                  - generic [ref=e272]: SKU-OE65EO
+                - cell "67" [ref=e273]
+                - cell "₹28,187.57" [ref=e274]
+                - cell "₹29,067.95" [ref=e275]
+              - row "ex fuga eos SKU-SX44NL 55 ₹24,118.05 ₹26,205.30" [ref=e276]:
+                - cell "ex fuga eos SKU-SX44NL" [ref=e277]:
+                  - text: ex fuga eos
+                  - generic [ref=e278]: SKU-SX44NL
+                - cell "55" [ref=e279]
+                - cell "₹24,118.05" [ref=e280]
+                - cell "₹26,205.30" [ref=e281]
+              - row "neque culpa voluptatem SKU-DD22AM 73 ₹17,796.67 ₹24,726.56" [ref=e282]:
+                - cell "neque culpa voluptatem SKU-DD22AM" [ref=e283]:
+                  - text: neque culpa voluptatem
+                  - generic [ref=e284]: SKU-DD22AM
+                - cell "73" [ref=e285]
+                - cell "₹17,796.67" [ref=e286]
+                - cell "₹24,726.56" [ref=e287]
+              - row "esse sit repudiandae SKU-DJ99PS 75 ₹17,169.00 ₹23,592.00" [ref=e288]:
+                - cell "esse sit repudiandae SKU-DJ99PS" [ref=e289]:
+                  - text: esse sit repudiandae
+                  - generic [ref=e290]: SKU-DJ99PS
+                - cell "75" [ref=e291]
+                - cell "₹17,169.00" [ref=e292]
+                - cell "₹23,592.00" [ref=e293]
+              - row "commodi accusamus voluptatem SKU-DR11LG 74 ₹22,129.70 ₹22,866.74" [ref=e294]:
+                - cell "commodi accusamus voluptatem SKU-DR11LG" [ref=e295]:
+                  - text: commodi accusamus voluptatem
+                  - generic [ref=e296]: SKU-DR11LG
+                - cell "74" [ref=e297]
+                - cell "₹22,129.70" [ref=e298]
+                - cell "₹22,866.74" [ref=e299]
+              - row "aperiam velit hic SKU-GE54OG 85 ₹21,811.00 ₹22,010.75" [ref=e300]:
+                - cell "aperiam velit hic SKU-GE54OG" [ref=e301]:
+                  - text: aperiam velit hic
+                  - generic [ref=e302]: SKU-GE54OG
+                - cell "85" [ref=e303]
+                - cell "₹21,811.00" [ref=e304]
+                - cell "₹22,010.75" [ref=e305]
+              - row "voluptatem dolores numquam SKU-IT03ZF 42 ₹18,060.00 ₹20,442.66" [ref=e306]:
+                - cell "voluptatem dolores numquam SKU-IT03ZF" [ref=e307]:
+                  - text: voluptatem dolores numquam
+                  - generic [ref=e308]: SKU-IT03ZF
+                - cell "42" [ref=e309]
+                - cell "₹18,060.00" [ref=e310]
+                - cell "₹20,442.66" [ref=e311]
+              - row "sit quod maiores SKU-MO96DS 72 ₹19,137.60 ₹19,857.60" [ref=e312]:
+                - cell "sit quod maiores SKU-MO96DS" [ref=e313]:
+                  - text: sit quod maiores
+                  - generic [ref=e314]: SKU-MO96DS
+                - cell "72" [ref=e315]
+                - cell "₹19,137.60" [ref=e316]
+                - cell "₹19,857.60" [ref=e317]
+              - row "cupiditate qui id SKU-ZJ01VH 39 ₹18,380.70 ₹18,978.18" [ref=e318]:
+                - cell "cupiditate qui id SKU-ZJ01VH" [ref=e319]:
+                  - text: cupiditate qui id
+                  - generic [ref=e320]: SKU-ZJ01VH
+                - cell "39" [ref=e321]
+                - cell "₹18,380.70" [ref=e322]
+                - cell "₹18,978.18" [ref=e323]
+              - row "sed molestiae non SKU-FO45AM 49 ₹13,868.96 ₹17,043.18" [ref=e324]:
+                - cell "sed molestiae non SKU-FO45AM" [ref=e325]:
+                  - text: sed molestiae non
+                  - generic [ref=e326]: SKU-FO45AM
+                - cell "49" [ref=e327]
+                - cell "₹13,868.96" [ref=e328]
+                - cell "₹17,043.18" [ref=e329]
+              - row "veniam est mollitia SKU-KD70KR 74 ₹7,903.20 ₹14,358.22" [ref=e330]:
+                - cell "veniam est mollitia SKU-KD70KR" [ref=e331]:
+                  - text: veniam est mollitia
+                  - generic [ref=e332]: SKU-KD70KR
+                - cell "74" [ref=e333]
+                - cell "₹7,903.20" [ref=e334]
+                - cell "₹14,358.22" [ref=e335]
+              - row "esse ea labore SKU-OO24KF 72 ₹12,808.80 ₹13,588.56" [ref=e336]:
+                - cell "esse ea labore SKU-OO24KF" [ref=e337]:
+                  - text: esse ea labore
+                  - generic [ref=e338]: SKU-OO24KF
+                - cell "72" [ref=e339]
+                - cell "₹12,808.80" [ref=e340]
+                - cell "₹13,588.56" [ref=e341]
+              - row "eum placeat optio SKU-ZI27XO 37 ₹10,391.45 ₹13,334.06" [ref=e342]:
+                - cell "eum placeat optio SKU-ZI27XO" [ref=e343]:
+                  - text: eum placeat optio
+                  - generic [ref=e344]: SKU-ZI27XO
+                - cell "37" [ref=e345]
+                - cell "₹10,391.45" [ref=e346]
+                - cell "₹13,334.06" [ref=e347]
+              - row "veniam doloribus nulla SKU-FX41QI 31 ₹12,102.71 ₹12,481.22" [ref=e348]:
+                - cell "veniam doloribus nulla SKU-FX41QI" [ref=e349]:
+                  - text: veniam doloribus nulla
+                  - generic [ref=e350]: SKU-FX41QI
+                - cell "31" [ref=e351]
+                - cell "₹12,102.71" [ref=e352]
+                - cell "₹12,481.22" [ref=e353]
+              - row "quisquam in id SKU-MU51XO 40 ₹7,296.00 ₹10,844.00" [ref=e354]:
+                - cell "quisquam in id SKU-MU51XO" [ref=e355]:
+                  - text: quisquam in id
+                  - generic [ref=e356]: SKU-MU51XO
+                - cell "40" [ref=e357]
+                - cell "₹7,296.00" [ref=e358]
+                - cell "₹10,844.00" [ref=e359]
+              - row "eius dolorum omnis SKU-CM27NH 31 ₹10,365.78 ₹10,836.36" [ref=e360]:
+                - cell "eius dolorum omnis SKU-CM27NH" [ref=e361]:
+                  - text: eius dolorum omnis
+                  - generic [ref=e362]: SKU-CM27NH
+                - cell "31" [ref=e363]
+                - cell "₹10,365.78" [ref=e364]
+                - cell "₹10,836.36" [ref=e365]
+              - row "voluptatibus est voluptate SKU-CM03ZY 56 ₹5,617.92 ₹10,825.36" [ref=e366]:
+                - cell "voluptatibus est voluptate SKU-CM03ZY" [ref=e367]:
+                  - text: voluptatibus est voluptate
+                  - generic [ref=e368]: SKU-CM03ZY
+                - cell "56" [ref=e369]
+                - cell "₹5,617.92" [ref=e370]
+                - cell "₹10,825.36" [ref=e371]
+              - row "et aut ab SKU-PL89ZM 25 ₹6,681.00 ₹8,892.00" [ref=e372]:
+                - cell "et aut ab SKU-PL89ZM" [ref=e373]:
+                  - text: et aut ab
+                  - generic [ref=e374]: SKU-PL89ZM
+                - cell "25" [ref=e375]
+                - cell "₹6,681.00" [ref=e376]
+                - cell "₹8,892.00" [ref=e377]
+              - row "sed iusto et SKU-BD52QD 19 ₹7,791.71 ₹8,786.55" [ref=e378]:
+                - cell "sed iusto et SKU-BD52QD" [ref=e379]:
+                  - text: sed iusto et
+                  - generic [ref=e380]: SKU-BD52QD
+                - cell "19" [ref=e381]
+                - cell "₹7,791.71" [ref=e382]
+                - cell "₹8,786.55" [ref=e383]
+              - row "repellendus saepe cupiditate SKU-FW89HA 71 ₹5,180.87 ₹8,669.81" [ref=e384]:
+                - cell "repellendus saepe cupiditate SKU-FW89HA" [ref=e385]:
+                  - text: repellendus saepe cupiditate
+                  - generic [ref=e386]: SKU-FW89HA
+                - cell "71" [ref=e387]
+                - cell "₹5,180.87" [ref=e388]
+                - cell "₹8,669.81" [ref=e389]
+              - row "aperiam porro ut SKU-GY82KW 31 ₹6,827.75 ₹7,069.24" [ref=e390]:
+                - cell "aperiam porro ut SKU-GY82KW" [ref=e391]:
+                  - text: aperiam porro ut
+                  - generic [ref=e392]: SKU-GY82KW
+                - cell "31" [ref=e393]
+                - cell "₹6,827.75" [ref=e394]
+                - cell "₹7,069.24" [ref=e395]
+              - row "labore molestiae sed SKU-LC25BZ 54 ₹4,625.64 ₹6,568.02" [ref=e396]:
+                - cell "labore molestiae sed SKU-LC25BZ" [ref=e397]:
+                  - text: labore molestiae sed
+                  - generic [ref=e398]: SKU-LC25BZ
+                - cell "54" [ref=e399]
+                - cell "₹4,625.64" [ref=e400]
+                - cell "₹6,568.02" [ref=e401]
+              - row "et perferendis voluptatum SKU-CS25TF 12 ₹4,266.00 ₹5,143.44" [ref=e402]:
+                - cell "et perferendis voluptatum SKU-CS25TF" [ref=e403]:
+                  - text: et perferendis voluptatum
+                  - generic [ref=e404]: SKU-CS25TF
+                - cell "12" [ref=e405]
+                - cell "₹4,266.00" [ref=e406]
+                - cell "₹5,143.44" [ref=e407]
+              - row "eum aut numquam SKU-TM77IW 15 ₹3,389.40 ₹4,719.60" [ref=e408]:
+                - cell "eum aut numquam SKU-TM77IW" [ref=e409]:
+                  - text: eum aut numquam
+                  - generic [ref=e410]: SKU-TM77IW
+                - cell "15" [ref=e411]
+                - cell "₹3,389.40" [ref=e412]
+                - cell "₹4,719.60" [ref=e413]
+              - row "pariatur ab qui SKU-DS09CF 27 ₹3,673.62 ₹4,294.89" [ref=e414]:
+                - cell "pariatur ab qui SKU-DS09CF" [ref=e415]:
+                  - text: pariatur ab qui
+                  - generic [ref=e416]: SKU-DS09CF
+                - cell "27" [ref=e417]
+                - cell "₹3,673.62" [ref=e418]
+                - cell "₹4,294.89" [ref=e419]
+              - row "ratione autem dignissimos SKU-PF74KQ 64 ₹2,504.96 ₹4,215.04" [ref=e420]:
+                - cell "ratione autem dignissimos SKU-PF74KQ" [ref=e421]:
+                  - text: ratione autem dignissimos
+                  - generic [ref=e422]: SKU-PF74KQ
+                - cell "64" [ref=e423]
+                - cell "₹2,504.96" [ref=e424]
+                - cell "₹4,215.04" [ref=e425]
+              - row "deserunt provident eum SKU-ZS75QY 10 ₹2,678.80 ₹3,521.30" [ref=e426]:
+                - cell "deserunt provident eum SKU-ZS75QY" [ref=e427]:
+                  - text: deserunt provident eum
+                  - generic [ref=e428]: SKU-ZS75QY
+                - cell "10" [ref=e429]
+                - cell "₹2,678.80" [ref=e430]
+                - cell "₹3,521.30" [ref=e431]
+              - row "vel sit facilis SKU-NV81MB 9 ₹2,755.89 ₹3,171.42" [ref=e432]:
+                - cell "vel sit facilis SKU-NV81MB" [ref=e433]:
+                  - text: vel sit facilis
+                  - generic [ref=e434]: SKU-NV81MB
+                - cell "9" [ref=e435]
+                - cell "₹2,755.89" [ref=e436]
+                - cell "₹3,171.42" [ref=e437]
+              - row "corporis mollitia molestiae SKU-VI65ZM 13 ₹2,418.52 ₹3,066.44" [ref=e438]:
+                - cell "corporis mollitia molestiae SKU-VI65ZM" [ref=e439]:
+                  - text: corporis mollitia molestiae
+                  - generic [ref=e440]: SKU-VI65ZM
+                - cell "13" [ref=e441]
+                - cell "₹2,418.52" [ref=e442]
+                - cell "₹3,066.44" [ref=e443]
+              - row "nulla et error SKU-ZF86RA 30 ₹2,195.40 ₹3,002.10" [ref=e444]:
+                - cell "nulla et error SKU-ZF86RA" [ref=e445]:
+                  - text: nulla et error
+                  - generic [ref=e446]: SKU-ZF86RA
+                - cell "30" [ref=e447]
+                - cell "₹2,195.40" [ref=e448]
+                - cell "₹3,002.10" [ref=e449]
+              - row "id sunt aut SKU-QT38LQ 9 ₹2,482.74 ₹2,529.09" [ref=e450]:
+                - cell "id sunt aut SKU-QT38LQ" [ref=e451]:
+                  - text: id sunt aut
+                  - generic [ref=e452]: SKU-QT38LQ
+                - cell "9" [ref=e453]
+                - cell "₹2,482.74" [ref=e454]
+                - cell "₹2,529.09" [ref=e455]
+              - row "et repellat dolore SKU-LE45DO 7 ₹1,420.93 ₹1,764.84" [ref=e456]:
+                - cell "et repellat dolore SKU-LE45DO" [ref=e457]:
+                  - text: et repellat dolore
+                  - generic [ref=e458]: SKU-LE45DO
+                - cell "7" [ref=e459]
+                - cell "₹1,420.93" [ref=e460]
+                - cell "₹1,764.84" [ref=e461]
+              - row "laudantium quam voluptates SKU-YL69VZ 1 ₹475.86 ₹489.58" [ref=e462]:
+                - cell "laudantium quam voluptates SKU-YL69VZ" [ref=e463]:
+                  - text: laudantium quam voluptates
+                  - generic [ref=e464]: SKU-YL69VZ
+                - cell "1" [ref=e465]
+                - cell "₹475.86" [ref=e466]
+                - cell "₹489.58" [ref=e467]
+              - row "sapiente quisquam velit SKU-LW38OF 0 ₹0.00 ₹0.00" [ref=e468]:
+                - cell "sapiente quisquam velit SKU-LW38OF" [ref=e469]:
+                  - text: sapiente quisquam velit
+                  - generic [ref=e470]: SKU-LW38OF
+                - cell "0" [ref=e471]
+                - cell "₹0.00" [ref=e472]
+                - cell "₹0.00" [ref=e473]

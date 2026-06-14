@@ -1,0 +1,238 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - heading "Point of Sale" [level=2] [ref=e76]
+    - main [ref=e77]:
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Scan barcode or search
+            - textbox "Scan barcode or type name / SKU..." [ref=e83]
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e88]: veniam est mollitia
+                - generic [ref=e89]: SKU-KD70KR · stock 74
+              - generic [ref=e90]: ₹194.03
+              - button "Add" [ref=e91] [cursor=pointer]
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - generic [ref=e94]: dolor omnis omnis
+                - generic [ref=e95]: SKU-OE65EO · stock 67
+              - generic [ref=e96]: ₹433.85
+              - button "Add" [ref=e97] [cursor=pointer]
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - generic [ref=e100]: vel sit facilis
+                - generic [ref=e101]: SKU-NV81MB · stock 9
+              - generic [ref=e102]: ₹352.38
+              - button "Add" [ref=e103] [cursor=pointer]
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - generic [ref=e106]: sit quod maiores
+                - generic [ref=e107]: SKU-MO96DS · stock 72
+              - generic [ref=e108]: ₹275.80
+              - button "Add" [ref=e109] [cursor=pointer]
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - generic [ref=e112]: ex fuga eos
+                - generic [ref=e113]: SKU-SX44NL · stock 55
+              - generic [ref=e114]: ₹476.46
+              - button "Add" [ref=e115] [cursor=pointer]
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]: voluptatibus est voluptate
+                - generic [ref=e119]: SKU-CM03ZY · stock 56
+              - generic [ref=e120]: ₹193.31
+              - button "Add" [ref=e121] [cursor=pointer]
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e124]: ratione autem dignissimos
+                - generic [ref=e125]: SKU-PF74KQ · stock 64
+              - generic [ref=e126]: ₹65.86
+              - button "Add" [ref=e127] [cursor=pointer]
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - generic [ref=e130]: id sunt aut
+                - generic [ref=e131]: SKU-QT38LQ · stock 9
+              - generic [ref=e132]: ₹281.01
+              - button "Add" [ref=e133] [cursor=pointer]
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: eum aut numquam
+                - generic [ref=e137]: SKU-TM77IW · stock 15
+              - generic [ref=e138]: ₹314.64
+              - button "Add" [ref=e139] [cursor=pointer]
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - generic [ref=e142]: aperiam porro ut
+                - generic [ref=e143]: SKU-GY82KW · stock 31
+              - generic [ref=e144]: ₹228.04
+              - button "Add" [ref=e145] [cursor=pointer]
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic [ref=e148]: nulla et error
+                - generic [ref=e149]: SKU-ZF86RA · stock 30
+              - generic [ref=e150]: ₹100.07
+              - button "Add" [ref=e151] [cursor=pointer]
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154]: est natus est
+                - generic [ref=e155]: SKU-IV19MQ · stock 98
+              - generic [ref=e156]: ₹509.98
+              - button "Add" [ref=e157] [cursor=pointer]
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: sunt corporis ducimus
+                - generic [ref=e161]: SKU-DV01NT · stock 98
+              - generic [ref=e162]: ₹518.96
+              - button "Add" [ref=e163] [cursor=pointer]
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - generic [ref=e166]: iure at aliquid
+                - generic [ref=e167]: SKU-TI67ME · stock 56
+              - generic [ref=e168]: ₹519.18
+              - button "Add" [ref=e169] [cursor=pointer]
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - generic [ref=e172]: ut corporis velit
+                - generic [ref=e173]: SKU-TG39KH · stock 79
+              - generic [ref=e174]: ₹377.11
+              - button "Add" [ref=e175] [cursor=pointer]
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: Customer
+              - button "+ Add new customer" [ref=e180] [cursor=pointer]
+            - generic [ref=e181]:
+              - textbox "Walk-in — search name or phone..." [active] [ref=e182]
+              - generic [ref=e204]:
+                - button "Walk-in (no customer)" [ref=e205] [cursor=pointer]
+                - button "Abdullah D'Amore 9213894448" [ref=e206] [cursor=pointer]:
+                  - generic [ref=e207]: Abdullah D'Amore
+                  - generic [ref=e208]: "9213894448"
+                - button "Brycen Schneider 9028024542" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e210]: Brycen Schneider
+                  - generic [ref=e211]: "9028024542"
+                - button "Dorcas Wyman DVM 9964473536" [ref=e212] [cursor=pointer]:
+                  - generic [ref=e213]: Dorcas Wyman DVM
+                  - generic [ref=e214]: "9964473536"
+                - button "Dr. Aiyana Reichert DDS 9899883495" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216]: Dr. Aiyana Reichert DDS
+                  - generic [ref=e217]: "9899883495"
+                - button "Dr. Jennifer Prohaska MD 9049121582" [ref=e218] [cursor=pointer]:
+                  - generic [ref=e219]: Dr. Jennifer Prohaska MD
+                  - generic [ref=e220]: "9049121582"
+                - button "Dwight Greenfelder 9236485054" [ref=e221] [cursor=pointer]:
+                  - generic [ref=e222]: Dwight Greenfelder
+                  - generic [ref=e223]: "9236485054"
+                - button "Fabiola Barrows DDS 9862452580" [ref=e224] [cursor=pointer]:
+                  - generic [ref=e225]: Fabiola Barrows DDS
+                  - generic [ref=e226]: "9862452580"
+                - button "Fae Haag 9796916912" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e228]: Fae Haag
+                  - generic [ref=e229]: "9796916912"
+                - button "Georgiana Renner IV 9439818792" [ref=e230] [cursor=pointer]:
+                  - generic [ref=e231]: Georgiana Renner IV
+                  - generic [ref=e232]: "9439818792"
+                - button "Lonnie Stroman 9740344380" [ref=e233] [cursor=pointer]:
+                  - generic [ref=e234]: Lonnie Stroman
+                  - generic [ref=e235]: "9740344380"
+                - button "Melyssa Rodriguez 9788036728" [ref=e236] [cursor=pointer]:
+                  - generic [ref=e237]: Melyssa Rodriguez
+                  - generic [ref=e238]: "9788036728"
+                - button "Mr. Adolphus Will 9794008468" [ref=e239] [cursor=pointer]:
+                  - generic [ref=e240]: Mr. Adolphus Will
+                  - generic [ref=e241]: "9794008468"
+                - button "Nicolas Mertz 9450668548" [ref=e242] [cursor=pointer]:
+                  - generic [ref=e243]: Nicolas Mertz
+                  - generic [ref=e244]: "9450668548"
+                - button "Rosa Goldner 9822808682" [ref=e245] [cursor=pointer]:
+                  - generic [ref=e246]: Rosa Goldner
+                  - generic [ref=e247]: "9822808682"
+                - button "Vicente Langosh 9397959414" [ref=e248] [cursor=pointer]:
+                  - generic [ref=e249]: Vicente Langosh
+                  - generic [ref=e250]: "9397959414"
+          - generic [ref=e184]: Cart is empty.
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]: Subtotal
+              - generic [ref=e188]: ₹0.00
+            - generic [ref=e189]:
+              - generic [ref=e190]: Tax
+              - generic [ref=e191]: ₹0.00
+            - generic [ref=e192]:
+              - generic [ref=e193]: Discount
+              - spinbutton [ref=e194]: "0"
+            - generic [ref=e195]:
+              - generic [ref=e196]: Total
+              - generic [ref=e197]: ₹0.00
+            - generic [ref=e198]:
+              - button "cash" [ref=e199] [cursor=pointer]
+              - button "upi" [ref=e200] [cursor=pointer]
+              - button "card" [ref=e201] [cursor=pointer]
+            - button "Checkout · ₹0.00" [disabled] [ref=e202]:
+              - generic [ref=e203]: Checkout · ₹0.00

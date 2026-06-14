@@ -1,0 +1,147 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - link [ref=e76] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products
+            - img [ref=e77]
+          - heading "Edit Product — eum placeat optio" [level=2] [ref=e79]
+        - link "Print Barcode" [ref=e81] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/22/barcode
+    - main [ref=e82]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "Basic Information" [level=3] [ref=e88]
+          - generic [ref=e89]:
+            - generic [ref=e90]: Product Name *
+            - textbox [ref=e91]: eum placeat optio
+          - generic [ref=e92]:
+            - generic [ref=e93]: Category
+            - combobox [ref=e94]:
+              - option "Uncategorized"
+              - option "Apparel"
+              - option "Beverages"
+              - option "Dairy"
+              - option "Electronics" [selected]
+              - option "Groceries"
+              - option "Personal Care"
+              - option "Snacks"
+              - option "Stationery"
+          - generic [ref=e95]:
+            - generic [ref=e96]: Description
+            - textbox [ref=e97]: Qui recusandae quia incidunt. Saepe atque consectetur molestiae similique maiores molestiae optio. Doloribus laboriosam optio voluptatem non molestiae eveniet.
+          - generic [ref=e98]:
+            - generic [ref=e99]: Images
+            - generic [ref=e100] [cursor=pointer]:
+              - img [ref=e101]
+              - paragraph [ref=e103]: Click to upload or drag & drop
+              - paragraph [ref=e104]: PNG, JPG, WEBP — up to 2 MB each, max 8 images
+          - heading "Inventory & Pricing" [level=3] [ref=e106]
+          - generic [ref=e107]:
+            - generic [ref=e108]: SKU *
+            - textbox [ref=e109]: SKU-ZI27XO
+          - generic [ref=e110]:
+            - generic [ref=e111]: Barcode
+            - generic [ref=e112]:
+              - textbox [ref=e113]: "015176179863"
+              - button "↻" [ref=e114] [cursor=pointer]
+          - generic [ref=e115]:
+            - generic [ref=e116]: Purchase Price *
+            - generic [ref=e117]:
+              - generic:
+                - generic: ₹
+              - spinbutton [ref=e118]: "280.85"
+          - generic [ref=e119]:
+            - generic [ref=e120]: Selling Price *
+            - generic [ref=e121]:
+              - generic:
+                - generic: ₹
+              - spinbutton [ref=e122]: "360.38"
+          - generic [ref=e123]:
+            - generic [ref=e124]: Tax Rate (%)
+            - spinbutton [ref=e125]: "5.00"
+          - generic [ref=e126]:
+            - generic [ref=e127]: Stock Quantity *
+            - spinbutton [ref=e128]: "37"
+          - generic [ref=e129]:
+            - generic [ref=e130]: Low-Stock Threshold
+            - spinbutton [ref=e131]: "10"
+          - generic [ref=e132]:
+            - generic [ref=e133]: Product Type *
+            - combobox [ref=e134]:
+              - option "Simple" [selected]
+              - option "Variant"
+        - generic [ref=e135]:
+          - checkbox "Active (visible in POS)" [checked] [ref=e136]
+          - generic [ref=e137]: Active (visible in POS)
+        - generic [ref=e138]:
+          - link "Manage variants →" [ref=e139] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/products/22
+          - generic [ref=e140]:
+            - link "Cancel" [ref=e141] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products
+            - button "Update Product" [ref=e142] [cursor=pointer]

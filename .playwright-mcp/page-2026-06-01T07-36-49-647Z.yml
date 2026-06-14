@@ -1,0 +1,123 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - link [ref=e76] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/pos
+            - img [ref=e77]
+          - heading "Invoice INV-000164" [level=2] [ref=e79]
+        - generic [ref=e81]:
+          - link "Download PDF" [ref=e82] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/pos/invoice/164/pdf
+          - button "Print" [ref=e83] [cursor=pointer]
+          - button "Send on WhatsApp" [ref=e85] [cursor=pointer]
+    - main [ref=e86]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - heading "My Company" [level=2] [ref=e91]
+          - generic [ref=e92]:
+            - heading "INVOICE" [level=3] [ref=e93]
+            - paragraph [ref=e94]: INV-000164
+            - paragraph [ref=e95]: 01 Jun 2026, 07:36
+            - paragraph [ref=e96]: "Status: paid"
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - paragraph [ref=e99]: Billed To
+            - paragraph [ref=e100]: Ramesh Walkin
+            - paragraph [ref=e101]: "9876500011"
+            - paragraph [ref=e102]: 12 MG Road, Pune
+          - generic [ref=e103]:
+            - paragraph [ref=e104]: Cashier
+            - paragraph [ref=e105]: Administrator
+            - paragraph [ref=e106]: Paid via cash
+        - table [ref=e107]:
+          - rowgroup [ref=e108]:
+            - row "Item Qty Price Total" [ref=e109]:
+              - columnheader "Item" [ref=e110]
+              - columnheader "Qty" [ref=e111]
+              - columnheader "Price" [ref=e112]
+              - columnheader "Total" [ref=e113]
+          - rowgroup [ref=e114]:
+            - row "veniam est mollitia 1 ₹194.03 ₹194.03" [ref=e115]:
+              - cell "veniam est mollitia" [ref=e116]
+              - cell "1" [ref=e117]
+              - cell "₹194.03" [ref=e118]
+              - cell "₹194.03" [ref=e119]
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - generic [ref=e123]: Subtotal
+            - generic [ref=e124]: ₹194.03
+          - generic [ref=e125]:
+            - generic [ref=e126]: Tax
+            - generic [ref=e127]: ₹0.00
+          - generic [ref=e128]:
+            - generic [ref=e129]: Discount
+            - generic [ref=e130]: − ₹0.00
+          - generic [ref=e131]:
+            - generic [ref=e132]: Total
+            - generic [ref=e133]: ₹194.03
+        - generic [ref=e134]: Thank you for your business!

@@ -1,0 +1,125 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - heading "INVENTORY" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/dashboard
+        - img [ref=e8]
+        - text: Dashboard
+      - link "POS / Billing" [ref=e10] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/pos
+        - img [ref=e11]
+        - text: POS / Billing
+      - link "Invoices" [ref=e13] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/invoices
+        - img [ref=e14]
+        - text: Invoices
+      - paragraph [ref=e17]: Catalog
+      - link "Categories" [ref=e18] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/categories
+        - img [ref=e19]
+        - text: Categories
+      - link "Products" [ref=e21] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/products
+        - img [ref=e22]
+        - text: Products
+      - link "Inventory" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/inventory
+        - img [ref=e25]
+        - text: Inventory
+      - paragraph [ref=e28]: Sales
+      - link "Customers" [ref=e29] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/customers
+        - img [ref=e30]
+        - text: Customers
+      - link "Analytics" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/reports
+        - img [ref=e33]
+        - text: Analytics
+      - paragraph [ref=e36]: System
+      - link "Settings" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/settings
+        - img [ref=e38]
+        - text: Settings
+      - link "Activity Log" [ref=e41] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/activity
+        - img [ref=e42]
+        - text: Activity Log
+    - generic [ref=e45]:
+      - generic [ref=e47]: A
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Administrator
+        - paragraph [ref=e50]: Admin
+        - button "Sign out" [ref=e52] [cursor=pointer]
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+            - img [ref=e60]
+          - link "Dashboard" [ref=e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/dashboard
+        - button "Administrator" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Administrator
+          - img [ref=e70]
+    - banner [ref=e72]:
+      - generic [ref=e74]:
+        - heading "Products" [level=2] [ref=e76]
+        - link "Add Product" [ref=e78] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/products/create
+          - img [ref=e79]
+          - text: Add Product
+    - main [ref=e81]:
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - textbox "Search name, SKU, or barcode..." [ref=e85]: SKU-ZI27XO
+          - combobox [ref=e86]:
+            - option "All Categories" [selected]
+            - option "Apparel"
+            - option "Beverages"
+            - option "Dairy"
+            - option "Electronics"
+            - option "Groceries"
+            - option "Personal Care"
+            - option "Snacks"
+            - option "Stationery"
+          - generic [ref=e87]:
+            - button "Filter" [ref=e88] [cursor=pointer]
+            - link "Reset" [ref=e89] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/products
+        - table [ref=e91]:
+          - rowgroup [ref=e92]:
+            - row "Product Category SKU / Barcode Price Stock Status Actions" [ref=e93]:
+              - columnheader "Product" [ref=e94]
+              - columnheader "Category" [ref=e95]
+              - columnheader "SKU / Barcode" [ref=e96]
+              - columnheader "Price" [ref=e97]
+              - columnheader "Stock" [ref=e98]
+              - columnheader "Status" [ref=e99]
+              - columnheader "Actions" [ref=e100]
+          - rowgroup [ref=e101]:
+            - 'row "N/A eum placeat optio simple Electronics SKU-ZI27XO 015176179863 ₹360.38 Cost: ₹280.85 37 Active View Edit Delete" [ref=e102]':
+              - cell "N/A eum placeat optio simple" [ref=e103]:
+                - generic [ref=e104]:
+                  - generic [ref=e105]: N/A
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: eum placeat optio
+                    - generic [ref=e108]: simple
+              - cell "Electronics" [ref=e109]
+              - cell "SKU-ZI27XO 015176179863" [ref=e110]:
+                - generic [ref=e111]: SKU-ZI27XO
+                - generic [ref=e112]: "015176179863"
+              - 'cell "₹360.38 Cost: ₹280.85" [ref=e113]':
+                - generic [ref=e114]: ₹360.38
+                - generic [ref=e115]: "Cost: ₹280.85"
+              - cell "37" [ref=e116]:
+                - generic [ref=e117]: "37"
+              - cell "Active" [ref=e118]:
+                - generic [ref=e119]: Active
+              - cell "View Edit Delete" [ref=e120]:
+                - link "View" [ref=e121] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/products/22
+                - link "Edit" [ref=e122] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8000/products/22/edit
+                - button "Delete" [ref=e124] [cursor=pointer]

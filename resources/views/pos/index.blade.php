@@ -3,21 +3,67 @@
         <x-page-header title="Point of Sale" />
     </x-slot>
 
+    <style>
+        @keyframes scan {
+            0%, 100% { top: 0%; }
+            50% { top: 100%; }
+        }
+        .animate-scan-line {
+            animation: scan 2s ease-in-out infinite;
+        }
+    </style>
+
     <div x-data="pos()" x-init="init()" class="grid grid-cols-1 lg:grid-cols-5 gap-6">
         {{-- Search + product results --}}
         <div class="lg:col-span-3 space-y-4">
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
-                <label class="block text-xs font-medium text-gray-500 mb-2">Scan barcode or search</label>
-                <input
-                    type="text"
-                    x-model="query"
-                    @input.debounce.250ms="search()"
-                    @keydown.enter.prevent="quickAddByBarcode()"
-                    x-ref="searchInput"
-                    autofocus
-                    placeholder="Scan barcode or type name / SKU..."
-                    class="w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                >
+                <div class="flex justify-between items-center mb-2">
+                    <label class="block text-xs font-medium text-gray-500">Scan barcode or search</label>
+                    <button type="button" @click="toggleCamera()" class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 hover:text-indigo-800 focus:outline-none transition-colors">
+                        <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+                        </svg>
+                        <span x-text="cameraOpen ? 'Close Scanner' : 'Scan via Camera'"></span>
+                    </button>
+                </div>
+                <div class="relative">
+                    <input
+                        type="text"
+                        x-model="query"
+                        @input.debounce.250ms="search()"
+                        @keydown.enter.prevent="quickAddByBarcode()"
+                        x-ref="searchInput"
+                        autofocus
+                        placeholder="Scan barcode or type name / SKU..."
+                        class="w-full pr-10 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    >
+                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                {{-- Camera scanner --}}
+                <div x-show="cameraOpen" x-transition class="mt-4 border-t border-gray-100 pt-4" x-cloak>
+                    <div class="flex justify-center mb-3">
+                        <div class="relative w-full max-w-md bg-black rounded-xl overflow-hidden aspect-video border border-gray-200 shadow-inner">
+                            <video id="video" class="w-full h-full object-cover" playsinline></video>
+                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <div class="border-2 border-indigo-500 rounded-lg w-3/4 h-2/3 relative">
+                                    <div class="absolute left-0 w-full h-0.5 bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)] animate-scan-line"></div>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-4 left-0 right-0 text-center">
+                                <p class="text-white bg-black/60 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs inline-block font-medium" x-text="scanStatus">Point camera at barcode</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="button" @click="stopCamera()" class="px-4 py-2 bg-red-600 text-white rounded-lg text-xs font-semibold hover:bg-red-700 transition shadow-sm hover:shadow-md">Stop Camera</button>
+                    </div>
+                </div>
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
@@ -158,6 +204,7 @@
     </div>
 
     @push('scripts')
+        <script src="{{ asset('js/zxing.min.js') }}"></script>
         <script>
             function pos() {
                 return {
@@ -175,6 +222,12 @@
                     submitting: false,
                     errorMessage: '',
                     currency: @json(setting('currency_symbol', '₹')),
+
+                    // Camera Scanner properties
+                    cameraOpen: false,
+                    codeReader: null,
+                    scanStatus: 'Point camera at barcode',
+                    isScanning: false,
 
                     init() {
                         this.search();
@@ -322,6 +375,127 @@
                         } else {
                             this.errorMessage = data.error || 'Checkout failed.';
                         }
+                    },
+
+                    async toggleCamera() {
+                        if (this.cameraOpen) {
+                            this.stopCamera();
+                        } else {
+                            await this.startCamera();
+                        }
+                    },
+
+                    async startCamera() {
+                        if (this.cameraOpen) return;
+                        
+                        // Check if browser/context supports mediaDevices/getUserMedia
+                        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                            alert('Camera access is not supported by your browser or is blocked because this page is not loaded over a secure connection (HTTPS or localhost).');
+                            return;
+                        }
+                        
+                        this.cameraOpen = true;
+                        this.scanStatus = 'Initializing camera...';
+                        
+                        await this.$nextTick();
+                        
+                        try {
+                            if (!this.codeReader) {
+                                if (typeof window.ZXing !== 'undefined') {
+                                    this.codeReader = new window.ZXing.BrowserMultiFormatReader();
+                                } else {
+                                    throw new Error('ZXing library not loaded');
+                                }
+                            }
+                            
+                            this.scanStatus = 'Point camera at barcode';
+                            const videoElement = document.getElementById('video');
+                            
+                            this.isScanning = true;
+                            
+                            // Prefer rear camera (environment) but fallback to any available camera.
+                            // Passing constraints prevents the permission-check race condition.
+                            const constraints = {
+                                video: {
+                                    facingMode: { ideal: 'environment' }
+                                }
+                            };
+                            
+                            await this.codeReader.decodeFromConstraints(constraints, videoElement, async (result, error) => {
+                                if (result && this.isScanning) {
+                                    const barcode = result.getText();
+                                    this.scanStatus = `Barcode detected: ${barcode}`;
+                                    this.isScanning = false;
+                                    
+                                    const success = await this.addByBarcode(barcode);
+                                    if (success) {
+                                        this.scanStatus = `Added: ${barcode}`;
+                                        setTimeout(() => {
+                                            if (this.cameraOpen) {
+                                                this.isScanning = true;
+                                                this.scanStatus = 'Point camera at barcode';
+                                            }
+                                        }, 1500);
+                                    } else {
+                                        this.scanStatus = `Product not found: ${barcode}`;
+                                        setTimeout(() => {
+                                            if (this.cameraOpen) {
+                                                this.isScanning = true;
+                                                this.scanStatus = 'Point camera at barcode';
+                                            }
+                                        }, 2000);
+                                    }
+                                }
+                                
+                                if (error && error.name !== 'NotFoundException') {
+                                    console.error('Scan error:', error);
+                                }
+                            });
+                        } catch (err) {
+                            console.error('Camera error:', err);
+                            alert('Could not access camera: ' + err.message);
+                            this.stopCamera();
+                        }
+                    },
+
+                    stopCamera() {
+                        if (this.codeReader) {
+                            this.codeReader.reset();
+                        }
+                        this.isScanning = false;
+                        this.cameraOpen = false;
+                        this.scanStatus = 'Point camera at barcode';
+                    },
+
+                    async addByBarcode(barcode) {
+                        if (!barcode) return false;
+                        
+                        const originalQuery = this.query;
+                        this.query = barcode;
+                        await this.search();
+                        
+                        const match = this.results.find(p => p.barcode === barcode);
+                        if (match) {
+                            this.addItem(match, null);
+                            this.query = '';
+                            this.results = [];
+                            this.$refs.searchInput.focus();
+                            return true;
+                        }
+                        for (const p of this.results) {
+                            const v = (p.variants || []).find(v => v.barcode === barcode);
+                            if (v) {
+                                this.addItem(p, v);
+                                this.query = '';
+                                this.results = [];
+                                this.$refs.searchInput.focus();
+                                return true;
+                            }
+                        }
+                        
+                        this.query = originalQuery;
+                        await this.search();
+                        return false;
                     },
                 }
             }
